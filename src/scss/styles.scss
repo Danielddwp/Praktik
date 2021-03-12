@@ -1,15 +1,133 @@
-$fontColor: #0091aa;
-$colorHeading: #be4a14;
-#content  // div with id: content
-{
-    color: $fontColor;
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #070bfc;
+  }
+  
+  /* Hvor NavigationBar placeres på siden */
+  li {
+    float:left;
+    
+  }
+  /* Elementerne inde i navigations baren */
+  li a {
+    display:grid;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  /* Når musen holder over elementerne */
+  li a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /*Vores home knap*/
+  li a.active {
+    color: white;
+    background-color: #4CAF50;
+  }
+
+  /* Profile knappen i nav baren */
+  #Profile {
+    position: relative;
+    left: 960px;
 }
 
-h2
-{
-    color: $colorHeading;
+
+
+  #Header {
+      background-color: rgb(8, 45, 255);
+      border-top-style:double;
+      height: 8mm;
+
+      position: relative;
+      bottom: 18px;
+      padding:120px
+    
+      }
+
+
+
+  #Velkommen {
+      color: rgb(255, 255, 255);
+      font-style:normal;
+      text-align: center;
+      font-size: 1.8cm;
+
+      position: relative;
+      bottom: 130px;
+  }
+
+  #Undertekst {
+    color: rgb(255, 255, 255);
+    font-style:normal;
+    font-size: 0.5cm;
+    text-align: center;
+
+    position: relative;
+    bottom: 110px;
+    left: 5px;
 }
 
-h1{
-    @extend h2;
+#UnderUndertekst {
+    color: rgb(221, 221, 221);
+    font-style:normal;
+    font-size: 0.5cm;
+    text-align: center;
+
+    position: relative;
+    bottom: 110px;
+    left: 5px;
 }
+
+
+
+
+
+
+#Pink {
+    background-color: rgba(171, 8, 192, 0.301);
+    border-top-style:double;
+    height: 8mm;
+
+    position: relative;
+    bottom: 18px;
+    padding:180px
+  
+    }
+
+    
+#Grøn {
+    background-color: rgba(66, 187, 10, 0.342);
+    border-top-style:double;
+    height: 8mm;
+
+    position: relative;
+    bottom: 18px;
+    padding:180px
+  
+    }
+
+    #OverskriftPink {
+        font-size: 0.5cm;
+        position: relative;
+        left: 450px;
+        bottom: 130px;
+        grid-area:auto;
+    }
+
+    #OverskriftGrøn {
+        font-size: 0.5cm;
+        position: relative;
+        left: 30px;
+        bottom: 130px;
+        grid-area:auto;
+        
+    }
+
+    
